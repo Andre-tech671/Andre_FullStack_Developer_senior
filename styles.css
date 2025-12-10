@@ -1,0 +1,199 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header,
+main,
+footer {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav i {
+    font-size: 1.3rem;
+}
+
+main,
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    gap: 4rem;
+}
+
+section {
+    gap: 1rem;
+}
+
+.intro-header p {
+    padding-top: 0.25rem;
+}
+
+.intro-description {
+    max-width: 500px;
+}
+
+.links-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.link-arrow {
+    color: var(--color-link);
+    transform: rotate(-45deg);
+}
+
+.color-div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.cards-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.project-card>div:first-of-type {
+    flex: 1;
+}
+
+.project-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 0.5rem;
+}
+
+.tech-list {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    padding: 0.25rem 0;
+}
+
+.tech-list div {
+    padding: 0.1rem 0.5rem;
+    border-radius: var(--border-radius-small);
+}
+
+.tech-list p {
+    font-size: 0.8rem;
+}
+
+@media (min-width: 640px) {
+    .project-card {
+        flex-direction: row;
+    }
+
+    .project-card .img-div {
+        max-width: 30%;
+    }
+}
+
+/* ========== COLOR PICKER GAME STYLES ========== */
+
+.color-div {
+    display: none;
+    padding: 1.5rem;
+    border-radius: var(--border-radius-small);
+    background-color: #f5f5f5;
+    border: 2px solid #ddd;
+    margin-top: 1rem;
+}
+
+.color-div h4 {
+    margin-bottom: 1rem;
+}
+
+.color-div-hidden {
+    display: none !important;
+    margin: 0.5rem 0;
+    color: #666;
+    font-style: italic;
+}
+
+#color-picker {
+    width: auto;
+    padding: 0.75rem 1.5rem;
+    height: auto;
+    cursor: pointer;
+    border: none;
+    border-radius: var(--border-radius-small);
+    margin: 1rem 0;
+    font-weight: 600;
+    background-color: #0084ff;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+#color-picker:hover {
+    background-color: #0066cc;
+}
+
+.color-div-reset {
+    display: none !important;
+    padding: 0.75rem 1.5rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: var(--border-radius-small);
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.color-div-reset:hover {
+    background-color: #218838;
+}
+
+#play-game {
+    margin-top: 1rem;
+    display: block;
+}
+
+#play-game button {
+    padding: 0.75rem 1.5rem;
+    background-color: #0084ff;
+    color: white;
+    border: none;
+    border-radius: var(--border-radius-small);
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#play-game button:hover {
+    background-color: #0066cc;
+}

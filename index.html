@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Andre's Web Portfolio</title>
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="fanta.css" />
+  
+  <!-- Font Awesome Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+
+  <body>
+    <!-- ========== HEADER ========== -->
+    <header>
+      <a href="/">Andre Nyanjahia</a>
+      <nav>
+        <!-- GitHub Link -->
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/Andre-tech671" title="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <!-- LinkedIn Link -->
+        <a target="_blank" rel="noopener noreferrer" href="https://www.bing.com/ck/a?!&&p=1953461f18964a48d6802593fba7545778fe86bbe2d6a5275794008b0de4d2eeJmltdHM9MTc2NDgwNjQwMA&ptn=3&ver=2&hsh=4&fclid=20b2cd66-8ae2-65dd-305c-dbde8b2b6497&psq=andre+nyanjahia&u=a1aHR0cHM6Ly9tei5saW5rZWRpbi5jb20vaW4vYW5kcmUtbnlhbmphaGlhLWFiNjY0MjI4YQ" title="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="intro-header">
+          <h1>Kia ora! I'm Andre...</h1>
+          <p>Full‑Stack Web & Systems Developerr</p>
+        </div>
+        <h5 class="intro-description">
+          I’m a highly autonomous Full‑Stack Systems Architect and Data
+          Strategist specializing in the Next.js and PERN stack. I design and
+          deploy scalable, high‑performance applications end‑to‑end, owning the
+          full technical lifecycle from system architecture to secure
+          deployment.
+        </h5>
+        <!-- Contact Links -->
+        <div class="links-container">
+          <i class="fa-solid link-arrow fa-arrow-right"></i>
+          <a href="mailto:nyanjahia@gmail.com">Email me</a>
+          <a target="_blank" rel="noopener noreferrer" href="https://github.com/Andre-tech671">GitHub</a>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.bing.com/ck/a?!&&p=1953461f18964a48d6802593fba7545778fe86bbe2d6a5275794008b0de4d2eeJmltdHM9MTc2NDgwNjQwMA&ptn=3&ver=2&hsh=4&fclid=20b2cd66-8ae2-65dd-305c-dbde8b2b6497&psq=andre+nyanjahia&u=a1aHR0cHM6Ly9tei5saW5rZWRpbi5jb20vaW4vYW5kcmUtbnlhbmphaGlhLWFiNjY0MjI4YQ">LinkedIn</a>
+        </div>
+
+        <!-- Color Picker Game -->
+        <div id="play-game">
+          <button onclick="playGame()">Play game???</button>
+        </div>
+        <div style="display: none;" class="color-div">
+          <h4>Pick a color</h4>
+          <p style="display: none;">Great... now it's ruined!</p>
+          <input type="color" id="color-picker" onchange="changeColor()" value="#0084ff" />
+          <button style="display: none;" onclick="resetColor()">Reset</button>
+        </div>
+      </section>
+
+      <section>
+        <h2>Skills</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Area</th>
+              <th>Technologies & Competencies</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>System Architecture</td>
+              <td>
+                RESTful API Design | Microservices | MVC Patterns | OAuth 2.0 |
+                JWT | Rate Limiting | Webhooks | Secure Authentication |
+                Scalability Engineering
+              </td>
+            </tr>
+
+            <tr>
+              <td>Frontend Ecosystem</td>
+              <td>
+                React.js | Next.js 13 (App Router) | Zustand | Context API |
+                Tailwind CSS | Framer Motion | EJS | Responsive UI/UX Design
+              </td>
+            </tr>
+
+            <tr>
+              <td>Backend & Databases</td>
+              <td>
+                Node.js | Express.js | NestJS | PostgreSQL | MongoDB | Firebase
+                | Supabase | SQL (Stored Procedures)
+              </td>
+            </tr>
+
+            <tr>
+              <td>Data Strategy & Analytics</td>
+              <td>
+                Python (Pandas, Matplotlib, Seaborn) | R (Statistical Modeling)
+                | SQL | Tableau | Excel (VBA Automation) | Google Data Studio |
+                Data Cleaning | Data Visualization | Statistical Analysis
+              </td>
+            </tr>
+
+            <tr>
+              <td>DevOps & Tools</td>
+              <td>
+                Git/GitHub | CI/CD | Vercel | Docker | Kubernetes | Agile
+                (Scrum) | Stripe API Integration | Figma
+              </td>
+            </tr>
+
+            <tr>
+              <td>Design Tools</td>
+              <td>Canva | Pixlr | Wireframing | Basic UI Mockups</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- ===== PROJECTS SECTION ===== -->
+      <section>
+        <h2>Latest Projects</h2>
+
+        <!-- Featured Projects Grid -->
+        <div class="cards-grid">
+          <!-- Project: Brogram -->
+          <div class="project-card">
+            <div>
+              <p>Jan 19, 2025</p>
+              <h4>Brogram</h4>
+              <div class="tech-list">
+                <div class="card-button-secondary"><p>ReactJS</p></div>
+                <div class="card-button-secondary"><p>FantaCSS</p></div>
+                <div class="card-button-secondary"><p>JavaScript</p></div>
+              </div>
+              <p>The Simple 30 Workouts Training Plan.</p>
+              <div class="project-links">
+                <a target="_blank" rel="noopener noreferrer" href="https://brogram-plan.netlify.app">Live</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/jamezmca/2_brogram">GitHub</a>
+              </div>
+            </div>
+            <div class="img-div">
+              <img
+                class="big-img"
+                src="https://github.com/jamezmca/1_web_portfolio/blob/main/public/brogram.png?raw=true"
+                alt="brogram-thumbnail"
+              />
+            </div>
+          </div>
+
+          <!-- Project: Smolstore -->
+          <div class="project-card">
+            <div>
+              <p>Jan 24, 2025</p>
+              <h4>Smolstore</h4>
+              <div class="tech-list">
+                <div class="card-button-secondary"><p>NextJS</p></div>
+                <div class="card-button-secondary"><p>FantaCSS</p></div>
+                <div class="card-button-secondary"><p>Stripe</p></div>
+              </div>
+              <p>A super cool store for programmers and productivity fiends!</p>
+              <div class="project-links">
+                <a target="_blank" rel="noopener noreferrer" href="https://main.d2a4evir1uyly1.amplifyapp.com/">Live</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/jamezmca/3_smolstore">GitHub</a>
+              </div>
+            </div>
+            <div class="img-div">
+              <img
+                class="big-img"
+                src="https://github.com/jamezmca/1_web_portfolio/blob/main/public/smolstore.png?raw=true"
+                alt="smolstore-thumbnail"
+              />
+            </div>
+          </div>
+
+          <!-- Project: Expenny -->
+          <div class="project-card">
+            <div>
+              <p>July 15, 2023</p>
+              <h4>Expenny | The Subscription Tracker</h4>
+              <div class="tech-list">
+                <div class="card-button-secondary"><p>NextJS</p></div>
+                <div class="card-button-secondary"><p>FantaCSS</p></div>
+                <div class="card-button-secondary"><p>Firebase</p></div>
+              </div>
+              <p>Track all your subscription analytics!</p>
+              <div class="project-links">
+                <a target="_blank" rel="noopener noreferrer" href="https://sub-tracker.netlify.app/">Live</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/jamezmca/4_expenny">GitHub</a>
+              </div>
+            </div>
+            <div class="img-div">
+              <img
+                class="big-img"
+                src="https://github.com/jamezmca/1_web_portfolio/blob/main/public/expenny.png?raw=true"
+                alt="expenny-thumbnail"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Saiket Systems Projects -->
+        <h3>Saiket Systems Projects</h3>
+        <div class="cards-grid">
+          <!-- Project: Responsive Ecommerce -->
+          <div class="project-card">
+            <div>
+              <p>Nov 28, 2025</p>
+              <h4>Responsive Ecommerce</h4>
+              <div class="tech-list">
+                <div class="card-button-secondary"><p>JavaScript</p></div>
+                <div class="card-button-secondary"><p>HTML</p></div>
+                <div class="card-button-secondary"><p>CSS</p></div>
+              </div>
+              <p>A responsive ecommerce website for clothing.</p>
+              <div class="project-links">
+                <a target="_blank" rel="noopener noreferrer" href="https://andre-tech671.github.io/responsive-website-task_2_saiket_systems/">Live</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/Andre-tech671/responsive-website-task_2_saiket_systems.git">GitHub</a>
+              </div>
+            </div>
+            <div class="img-div">
+              <a href="public/images/Task 2_ecommerce website.png" target="_blank">
+                <img class="big-img" src="public/images/Task 2_ecommerce website.png" alt="responsive-ecommerce-thumbnail" />
+              </a>
+            </div>
+          </div>
+
+          <!-- Project: React Todo App -->
+          <div class="project-card">
+            <div>
+              <p>Nov 28, 2025</p>
+              <h4>React Todo App</h4>
+              <div class="tech-list">
+                <div class="card-button-secondary"><p>ReactJS</p></div>
+                <div class="card-button-secondary"><p>HTML</p></div>
+                <div class="card-button-secondary"><p>CSS</p></div>
+              </div>
+              <p>This is a modern Todo APP coded with React Framework.</p>
+              <div class="project-links">
+                <a target="_blank" rel="noopener noreferrer" href="https://keepertodoapp.netlify.app/">Live</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/Andre-tech671/Task-3-React-Todo-App">GitHub</a>
+              </div>
+            </div>
+            <div class="img-div">
+              <a href="public/images/Task 3-Todo_app.png" target="_blank">
+                <img class="big-img" src="public/images/Task 3-Todo_app.png" alt="react-todo-app-thumbnail" />
+              </a>
+            </div>
+          </div>
+
+          <!-- Project: User Management REST API App -->
+          <div class="project-card">
+            <div>
+              <p>Dec 4, 2025</p>
+              <h4>User Management REST API App</h4>
+              <div class="tech-list">
+                <div class="card-button-secondary"><p>ReactJS</p></div>
+                <div class="card-button-secondary"><p>Vite</p></div>
+                <div class="card-button-secondary"><p>Node.js</p></div>
+                <div class="card-button-secondary"><p>Express.js</p></div>
+              </div>
+              <p>
+                A full-stack CRUD application with a React frontend and a
+                Node/Express REST API backend.
+              </p>
+              <div class="project-links">
+                <a target="_blank" rel="noopener noreferrer" href="https://userapptask4.netlify.app/">Live</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/Andre-tech671/Task_4_User_Management_REST_API_App.git">GitHub</a>
+              </div>
+            </div>
+            <div class="img-div">
+              <a href="public/images/Task 4_Usermanagement_App.png" target="_blank">
+                <img class="big-img" src="public/images/Task 4_Usermanagement_App.png" alt="user-management-app-thumbnail" />
+              </a>
+            </div>
+          </div>
+
+          <!-- Project: User Management REST API App with Database Integration -->
+          <div class="project-card">
+            <div>
+              <p>Dec 4, 2025</p>
+              <h4>User Management REST API App (Database Integration)</h4>
+              <div class="tech-list">
+                <div class="card-button-secondary"><p>ReactJS</p></div>
+                <div class="card-button-secondary"><p>Vite</p></div>
+                <div class="card-button-secondary"><p>Node.js</p></div>
+                <div class="card-button-secondary"><p>Express.js</p></div>
+                <div class="card-button-secondary"><p>PostgreSQL</p></div>
+              </div>
+              <p>
+                A full-stack CRUD application with a React frontend and a Node/Express
+                REST API backend, featuring PostgreSQL database integration for
+                persistent user data.
+              </p>
+              <div class="project-links">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://github.com/Andre-tech671/Task-5_-User-Management-REST-API-App-with-Database-Integration"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+            <div class="img-div">
+              <a href="public/images/Task 5 user_app_database_intergretion.png" target="_blank">
+                <img
+                  class="big-img"
+                  src="public/images/Task 5 user_app_database_intergretion.png"
+                  alt="user-management-db-app-thumbnail"
+                />
+              </a>
+            </div>
+          </div>
+
+          <!-- Project: User Management REST API App (In-Memory Storage) -->
+          <div class="project-card">
+            <div>
+              <p>Dec 4, 2025</p>
+              <h4>User Management REST API App (In‑Memory Storage)</h4>
+              <div class="tech-list">
+                <div class="card-button-secondary"><p>ReactJS</p></div>
+                <div class="card-button-secondary"><p>Vite</p></div>
+                <div class="card-button-secondary"><p>Node.js</p></div>
+                <div class="card-button-secondary"><p>Express.js</p></div>
+              </div>
+              <p>
+                A full-stack CRUD app with a React frontend and a Node/Express REST API
+                backend. It manages users (name, email, age) using an in-memory data
+                store, ideal for testing and development, with CORS enabled for smooth
+                frontend-backend communication.
+              </p>
+              <div class="project-links">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://github.com/Andre-tech671/Task-6-User-Management-REST-API-App"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+            <div class="img-div">
+              <a href="public/images/Task 6 fullstask usermanagement app.png" target="_blank">
+                <img
+                  class="big-img"
+                  src="public/images/Task 6 fullstask usermanagement app.png"
+                  alt="user-management-app-thumbnail"
+                />
+              </a>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+      <p>
+        By
+        <a href="https://stackdretech.netlify.app/" target="_blank" rel="noopener noreferrer">
+          Andre-tech671
+        </a>
+        ⭐️ the repo on <a target="_blank" rel="noopener noreferrer" href="">GitHub</a>
+      </p>
+    </footer>
+
+    <!-- ========== JAVASCRIPT ========== -->
+    <script>
+      // ===== COLOR PICKER GAME FUNCTIONALITY =====
+      // This script creates interactive color-switching game functionality
+
+      // 1. Select DOM Elements
+      const body = document.querySelector("body");
+      const colorInput = document.getElementById("color-picker");
+      const colorDiv = document.querySelector(".color-div");
+      const hiddenText = document.querySelector(".color-div p");
+      const resetBtn = document.querySelector(".color-div button");
+      const playBtn = document.getElementById("play-game");
+
+      // 2. Define Functions
+
+      /**
+       * Displays the color picker and hides the play button
+       */
+      function playGame() {
+        colorDiv.style.display = "block";
+        playBtn.style.display = "none";
+      }
+
+      /**
+       * Changes the background color based on the color input value
+       * Shows the hidden text and reset button
+       */
+      function changeColor() {
+        const selectedColor = colorInput.value;
+        body.style.background = selectedColor;
+        resetBtn.style.display = "block";
+        hiddenText.style.display = "block";
+        colorInput.style.display = "none";
+      }
+
+      /**
+       * Resets the color picker back to initial state
+       * Restores white background and shows play button
+       */
+      function resetColor() {
+        body.style.background = "white";
+        colorInput.style.display = "block";
+        playBtn.style.display = "block";
+        hiddenText.style.display = "none";
+        resetBtn.style.display = "none";
+        colorDiv.style.display = "none";
+      }
+
+      // 3. Event Handlers
+      // (Functions are called directly in HTML onclick attributes)
+    </script>
+  </body>
+</html>
