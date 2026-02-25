@@ -18,7 +18,7 @@ This is a personal web portfolio for Andre Nyanjahia, a Full-Stack Web & Systems
 
 ## Projects Featured
 ### Personal Projects
-- **Brogram**: A simple 30-workout training plan app built with ReactJS, FantaCSS, and JavaScript. [Live Demo](https://brogram-plan.netlify.app) | [GitHub](https://github.com/Andre-tech671/2_brogram)
+- **Brogram**: A simple 30-workout training plan app built with ReactJS, FantaCSS, and JavaScript. [Live Demo](https://andresworkoutapp.netlify.app/) | [GitHub](https://github.com/Andre-tech671/2_brogram)
 - **Smolstore**: An e-commerce store for programmers using NextJS, FantaCSS, and Stripe. [Live Demo](https://main.d2a4evir1uyly1.amplifyapp.com/) | [GitHub](https://github.com/jamezmca/3_smolstore)
 - **Expenny**: A subscription tracker with NextJS, FantaCSS, and Firebase. [Live Demo](https://sub-tracker.netlify.app/) | [GitHub](https://github.com/jamezmca/4_expenny)
 
