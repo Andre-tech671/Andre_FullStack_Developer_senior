@@ -270,6 +270,20 @@ tbody tr:hover {
 
 @media (max-width: 768px) {
     .intro-header h1 { font-size: 2rem; }
+
+    .project-card > div:first-of-type > p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .project-card {
+        text-align: center;
+    }
+
+    .project-card .tech-list,
+    .project-card .project-links {
+        justify-content: center;
+    }
     
     table, thead, tbody, th, td, tr { display: block; }
     thead { display: none; }
